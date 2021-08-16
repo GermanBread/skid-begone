@@ -8,6 +8,16 @@ For your best enjoyment, please make sure that the skid in this case is running 
 
 I hope to see your post on r/masterhacker using my script.
 
+Also **DO NOT use this against people who are not script-kiddies** (or skids, both mean the same). If you use this on let's say your friend who is not an arrogant skid *you'll be the greatest asshole of all time to them*.
+
+If you want to use this for remote administration, consider setting up SSH.
+
+If using a reverse-shell is your only *working* alternative to SSH, then go ahead (as long as you have permission by the owner of the machine).
+
+*Hey, aren't you already contradicting yourself by saying "you need to have permission"?*
+Yes I am absolutely are. However, due to the nature of skids (blindly running commands), they would get themselves in such situations anyways, if not worse. You can see it like this: The skid gives you permission indirectly because they'll happily run any command as root anyways.
+One day they will learn the hard way...
+
 ## Using the backdoor
 
 ### Prerequisites
