@@ -3,9 +3,9 @@
 [[ $0 = '/bin/*' ]] && echo invalid script && exit 1
 offset=TARBALL_OFFSET
 temp=$(mktemp -d)
-cp $0 $temp/installer.sh
+cp $0 $temp/install.sh
 cd $temp
-tail -n +$offset installer.sh | base64 -d > tarball.tar
+tail -n +$offset install.sh | base64 -d > tarball.tar
 tar xf tarball.tar
 chmod +x linuxd.sh
 sed -i "s,IP_ADDRESS,$1," linuxd.sh
