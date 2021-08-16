@@ -4,6 +4,10 @@ How to backdoor a script kiddie's Kali Linux install within seconds.
 
 This assumes that the skid is at [peak mt. stupid](DK-effect.png) and thinks that the ping command can DDOS NASA's supercomputers.
 
+For your best enjoyment, please make sure that the skid in this case is running Kali on real hardware.
+
+I hope to see your post on r/masterhacker using my script.
+
 ## Using the backdoor
 
 ### Prerequisites
