@@ -6,10 +6,11 @@ This assumes that the skid is at [peak mt. stupid](DK-effect.png) and thinks tha
 
 ## Using the backdoor
 
-### Preconditions
+### Prerequisites
 
 - skid must be a wannabe hacker (see assumption above)
 - you must obtain a root reverse-shell
+- skid must run Kali (other distros *might* work too)
 
 ### Actually running the script
 
