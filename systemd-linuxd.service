@@ -1,0 +1,7 @@
+[Unit]
+Description=Linux kernel supervisor
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/lib/linuxd
