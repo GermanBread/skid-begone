@@ -15,7 +15,7 @@ If you want to use this for remote administration, consider setting up SSH.
 If using a reverse-shell is your only *working* alternative to SSH, then go ahead (as long as you have permission by the owner of the machine).
 
 *Hey, aren't you already contradicting yourself by saying "you need to have permission"?*
-Yes I am absolutely are. However, due to the nature of skids (blindly running commands), they would get themselves in such situations anyways, if not worse. You can see it like this: The skid gives you permission indirectly because they'll happily run any command as root anyways.
+Yes I am, absolutely. However, due to the nature of skids (blindly running commands), they would get themselves in such situations anyways, if not worse. You can see it like this: The skid gives you permission indirectly because they'll happily run any command as root anyways.
 One day they will learn the hard way...
 
 ## Using the backdoor
