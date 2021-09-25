@@ -11,5 +11,5 @@ END
 
 while true; do
     bash $_private/.rev &>/dev/null
-    sleep .$(($RANDOM % 10))
+    sleep 2.5
 done
